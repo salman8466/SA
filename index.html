@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<title>HL3169</title>
+<!-- Meta Tag -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Hector Liang Columbia website">
+<meta name="keywords" content="Hector,Liang,Columbia,University">
+<meta name="author" content="Hector Liang">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+<!-- OFFline <link rel="stylesheet" href="w3.css">-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- CSS Files -->
+<link rel="stylesheet" href="style.css">
+
+<!-- Js Files -->
+<script src="script.js" defer></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script type="text/javascript" src="instafeed.min.js"></script>
+
+
+<body  id="home">
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()"
+        title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="#home" class="w3-bar-item w3-button">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button w3-hide-small">
+        <i class="fa fa-user"></i> ABOUT</a>
+      <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small">
+        <i class="fa fa-th"></i> PORTFOLIO</a>
+      <a href="#contactLink" class="w3-bar-item w3-button w3-hide-small">
+        <i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="https://github.com/chini5ko" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-right ">
+        <i class="fa fa-github"></i>
+      </a>
+      <a href="https://www.instagram.com/chinisko" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-right">
+        <i class="fa fa-instagram"></i>
+      </a>
+      <a href="https://linkedin.com/in/hectorliang" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-right ">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+      <div class="w3-container w3-center w3-animate-right" id="myNavbarSmall">
+
+
+        <a href="#about" class="w3-bar-item w3-button w3-center" onclick="toggleFunction()">ABOUT</a>
+        <a href="#portfolio" class="w3-bar-item w3-button w3-center" onclick="toggleFunction()">PORTFOLIO</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-center" onclick="toggleFunction()">CONTACT</a>
+
+        <a href="https://github.com/chini5ko" target="_blank" class="w3-bar-item w3-button w3-hide-large w3-center">
+          <i class="fa fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/chinisko" target="_blank" class="w3-bar-item w3-button w3-hide-large  w3-center ">
+          <i class="fa fa-instagram"></i>
+        </a>
+        <a href="https://linkedin.com/in/hectorliang" target="_blank" class="w3-bar-item w3-button w3-hide-large  w3-center ">
+          <i class="fa fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+<!--Large screen top website  -->
+    <div class="w3-display-container w3-third bgimg-china  w3-buttonbar w3-border-red w3-hide-small" >
+    <div class="w3-display-middle w3-large">
+      <h1 id="redTextShadow" style="font-weight:bold">中国</h1>
+    </div>
+  </div>
+
+
+  <div class="w3-display-container w3-third bgimg-nyc  w3-hide-small">
+    <div class="w3-opacity-min">
+      <div class="w3-display-middle w3-large">
+        <h1 id="greenTextShadow">NYC</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-display-container w3-third bgimg-vzla  w3-hide-small">
+    <div class="w3-opacity-min">
+      <div class="w3-display-middle w3-large">
+        <h1 id="blueTextShadow">Venezuela</h1>
+      </div>
+    </div>
+  </div>
+
+<!--small screen top website  -->
+
+<div class="w3-content w3-hide-large w3-hide-midium" style="max-width:800px" id="home">
+    <img class="mySlides" src="nyc.jpg" style="width:100%">
+    <img class="mySlides" src="china.jpg" style="width:100%">
+    <img class="mySlides" src="vzla.jpg" style="width:100%">
+  </div>
+  
+  <div class="w3-center w3-hide-large w3-hide-midium">
+   
+    <button class="w3-button demo" onclick="currentDiv(1)"><span id="greenTheme">NYC</span></button> 
+    <button class="w3-button demo" onclick="currentDiv(2)"><span id="redTheme">中国</span></button> 
+    <button class="w3-button demo" onclick="currentDiv(3)"><span id="blueTheme">VZLA</span></button> 
+  </div>
+
+  <!--About 3 colors -->
+  <div class="w3-row  ">
+
+    <!-- GS Cu Logo-->
+    <div class="w3-col m4 w3-center w3-padding-large">
+      <div class="w3-panel w3-center w3-pale-red w3-leftbar w3-rightbar w3-border-red" id="redBoxShadow">
+        <h3>BMCC</h3>
+      </div>
+    </div>
+
+    <!-- HL -->
+    <div class="w3-col m4 w3-center w3-padding-large" id="about">
+      <div class="w3-panel w3-center w3-pale-green w3-leftbar w3-rightbar w3-border-green" id="greenBoxShadow">
+        <img src="images/hector.jpg" class="w3-circle w3-image w3-opacity w3-hover-opacity-off " a lt="Photo of Me" width="88" height="88"
+          style="padding-top:20px">
+        <h3>
+          Hector Liang
+        </h3>
+      </div>
+    </div>
+
+    <!-- CS Logo-->
+    <div class="w3-col m4 w3-center w3-padding-large">
+      <div class="w3-panel w3-center w3-pale-blue w3-leftbar w3-rightbar w3-border-blue" id="blueBoxShadow">
+        <h3>Columbia University</h3>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Container (Human Section) -->
+  <div id="themeBoxShadow">
+
+  </div>
+  <div class="w3-content w3-container w3-border-top w3-border-bottom w3-border-black" id="humanDes">
+    <h3 class="w3-center">Human</h3>
+    <h4 class="w3-center">
+      <em>
+        <span id="redTheme">Creativity</span> will be the
+        <span id="greenTheme">currency</span> of the
+        <span id="blueTheme">future</span>
+      </em>
+    </h4>
+
+<h4> 
+    <span style="margin-left:2em"></span>
+Hello ~
+
+I was born in the Caribbean where I spend most of my childhood, and now I am in NYC studying and working at the same time to get the most of this city. I have a keen interest in businesses that integrate technology into their daily operations. This is why I studied business, and now I am studying Computer Science. 
+
+This is a brief Bio, but please feel free to reach out if you would like to connect and have a chat!
+
+<br>
+<br>
+./Best
+<br>
+Hector Liang
+</h4>
+
+  </div>
+
+
+  <!--Instagram  -->
+  <div class="w3-container w3-center w3-content w3-white">
+
+   
+
+
+<h1 class="w3-center">IG</h1>
+
+
+  </div>
+
+  <!--Git - NPM - Projects -->
+  <div class="w3-border-top w3-border-white" style="padding-bottom:46px" id="portfolio"></div>
+
+
+  <div class="w3-row w3-center w3-light-grey ">
+
+    <div class="w3-third w3-leftbar w3-border-red redTheme " id="redBar">
+      <a href="https://www.npmjs.com/~chini5ko" target="_blank">
+        <span class="w3-xlarge">
+          <i class="fa fa-gift" style="size:15px"></i>
+        </span>
+        <h6 id="blackShadow"> NPM</h>
+      </a>
+    </div>
+
+
+
+    <div class="w3-third w3-leftbar w3-rightbar w3-border-green" id="greenTheme">
+      <a href="https://github.com/chini5ko" target="_blank">
+        <span class="w3-xlarge">
+          <i class="fa fa-github"></i>
+        </span>
+        <h6 id="blackShadow"> Github</h>
+      </a>
+    </div>
+
+
+    <div class="w3-third  w3-rightbar w3-border-blue blueTheme " id="blueBar">
+      <a href="https://github.com/chini5ko" target="_blank">
+        <span class="w3-xlarge">
+          <i class="fa fa-briefcase"></i>
+        </span>
+        <h6 id="blackShadow"> Projects</h>
+      </a>
+    </div>
+  </div>
+
+  <!-- Second Parallax Image with Portfolio Text -->
+  <div class="bgimg-2 w3-display-container w3-opacity-min ">
+    <div class="w3-display-middle">
+      <h1 class="w3-xxlarge w3-wide" id="blueTextShadow">PORTFOLIO</h1>
+    </div>
+  </div>
+
+
+  <div class="w3-row w3-center w3-light-grey">
+    <div class="w3-third w3-leftbar w3-border-red redTheme " id="redBar1">
+      <a href="https://www.npmjs.com/~chini5ko" target="_blank">
+        <span class="w3-xlarge">
+          <h6 id="redTheme">1+</h>
+        </span>
+      </a>
+    </div>
+
+
+    <div class="w3-third w3-leftbar w3-rightbar w3-border-green ">
+
+      <a href="https://github.com/chini5ko" target="_blank">
+        <span class="w3-xlarge">
+          <h6 id="greenTheme">9+</h>
+        </span>
+      </a>
+    </div>
+
+    <div class="w3-third  w3-rightbar w3-border-blue blueTheme " id="blueBar1">
+      <a href="https://github.com/chini5ko" target="_blank">
+        <span class="w3-xlarge">
+          <h6 id="blueTheme">10+</h>
+        </span>
+      </a>
+    </div>
+  </div>
+
+
+ <!-- Work (Portfolio Section) -->
+
+  </div>  
+  <div class="w3-row-padding w3-center w3-black" style="padding-top:35px;padding-bottom:35px">
+
+      <div class="w3-col m4 w3-center">
+        <h6>
+          <span id="redTheme">'</span>AGE<span id="redTheme">'</span>
+          
+          
+          <br>
+          0<span id="redTheme">1</span>0<span id="redTheme">111</span>
+        
+      </div>
+  
+      <div class="w3-col m4 w3-center">
+        <h6>
+          <span id="greenTheme">'</span>Number<span id="greenTheme">'</span>
+          <br>
+          000<span id="greenTheme">1</span>000
+
+      </div>
+  
+      <div class="w3-col m4 w3-center">
+        <h6>
+          <span id="blueTheme">'</span>GRADUATION<span id="blueTheme">'</span>
+          <br>
+          <span id="blueTheme">111111</span>00<span id="blueTheme">1</span>00
+      </div>
+    </div>
+
+
+ 
+  
+  <!-- Red Parallax Image with random Text -->
+  <div class="bgimg-tram w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge  w3-wide">
+        <div class="w3-display-middle" id="redTextShadow">
+          <h1 class="w3-xxlarge w3-wide" >INFO</h1>
+        </div>
+        </img>
+    </div>
+  </div>
+
+  
+
+  <!-- Art (Portfolio Section) -->
+
+
+  <!--<ART/> (100% width) -->
+  <div class="w3-row-padding w3-center w3-black" style="padding: 25px">
+
+    <div class="w3-col m4 w3-center">
+      <h6>
+        <span id="redTheme">'</span>CODE<span id="redTheme">'</span>
+        <br>java
+        <br>C
+        <br>javascript </h6>
+    </div>
+
+    <div class="w3-col m4 w3-center">
+      <h6>
+          <span id="greenTheme">'</span>Favorite Data Structures<span id="greenTheme">'</span>
+
+        
+        <br>LinkedList
+        <br>HashTable
+        <br>Trees </h6>
+    </div>
+
+    <div class="w3-col m4 w3-center">
+      <h6>
+          <span id="blueTheme">'</span>SPEAK<span id="blueTheme">'</span>
+
+       
+        <br>Spanish
+        <br>Mandarin
+        <br  id="contactLink">English </h6>
+
+    </div>
+  </div>
+
+  <!--start portafolio top -->
+  <div class="w3-row w3-center w3-light-grey ">
+    <div class="w3-third w3-leftbar w3-border-red redTheme " id="redBar2">
+      <a href="https://www.instagram.com/chinisko" target="_blank">
+        <span class="w3-xlarge">
+          <i class="fa fa-instagram" style="size:15px"></i>
+        </span>
+
+      </a>
+    </div>
+
+
+    <div onclick="showWechat()">
+      <div class="w3-third w3-leftbar w3-rightbar w3-border-green" id="greenTheme">
+
+        <span class="w3-xlarge">
+          <div id="showWechat">
+            <i class="fa fa-wechat"></i>
+          </div>
+          <i id="wechatIcon"></i>
+        </span>
+      </div>
+    </div>
+
+    <div class="w3-third  w3-rightbar w3-border-blue blueTheme " id="blueBar2">
+      <a href="https://linkedin.com/in/hectorliang" target="_blank">
+        <span class="w3-xlarge">
+          <i class="fa fa-linkedin"></i>
+        </span>
+
+      </a>
+    </div>
+  </div>
+
+  <!-- Third Parallax Image with Portfolio Text -->
+  <div class="bgimg-3 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge  w3-wide">
+        <img id="showWechatQRCode">
+        <div class="w3-display-middle" id="greenTextShadow">
+          <h1 class="w3-xxlarge w3-wide" id="context" >CONTACT</h1>
+        </div>
+        </img>
+    </div>
+  </div>
+
+  <div class="w3-row w3-center w3-light-grey">
+    <div class="w3-third w3-leftbar w3-border-red redTheme " id="redBar3">
+
+      <span class="w3-xlarge">
+        <div >
+          <h6  id="blackShadow">一起去喝杯茶吧!</h>
+        </div>
+
+      </span>
+
+    </div>
+
+
+    <div class="w3-third w3-leftbar w3-rightbar w3-border-green ">
+
+
+      <span class="w3-xlarge">
+        <div id="greenTheme">
+          <h6  id="blackShadow">Coffee or Tea?</h>
+        </div>
+
+      </span>
+
+    </div>
+
+    <div class="w3-third  w3-rightbar w3-border-blue blueTheme " id="blueBar3">
+
+      <span class="w3-xlarge">
+        <h6  id="blackShadow">Vamos a tomar algo?</h>
+      </span>
+
+    </div>
+  </div>
+
+  <!-- Container (Contact Section) -->
+  <div class="w3-container w3-white">
+    <div class=" w3-row w3-padding-32 w3-section">
+      <div class="w3-col m4 w3-container ">
+      </div>
+      <div class="w3-col m4 w3-panel">
+        <div class="w3-large w3-margin-bottom" id="lastInfo">
+          <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right" id="redTheme"></i> New York City
+          <br>
+          <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right" id="greenTheme"></i> What's a phone?
+          <br>
+          <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right" id="blueTheme"></i>chinisko@outlook.com
+          <br>
+        </div>
+
+      </div>
+      <div class="w3-col m4 w3-container">
+        </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-16  ">
+    <a href="#home" class="w3-button w3-black w3-hover-white">
+      <i class="fa fa-arrow-up w3-margin-right" id="redTheme"></i>
+      <span id="greenTheme">To The Top</span>
+       
+      <i class="fa fa-arrow-up w3-margin-left" id="blueTheme"></i>
+    </a>
+    <div class="w3-large w3-section">
+
+    </div>
+  </footer>
+
+</body>
+
+</html>
